@@ -8,13 +8,9 @@ namespace MyFirstApi3.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var devices = new List<string>
-            {
-                "Device1",
-                "Device2",
-                "Device3"
-            };
-            return Ok(devices);
+            var laptop = new Entities.Laptop();
+            var model = laptop.GetModel();
+            return Ok(model);
         }
     }
 }
