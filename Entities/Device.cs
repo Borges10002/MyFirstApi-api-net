@@ -1,7 +1,10 @@
 ﻿namespace MyFirstApi3.Entities
 {
-    public class Device
+    public abstract class Device
     {
         public bool IsConnected() => true;
+
+        public abstract string GetBrand();
+       
     }
 }
